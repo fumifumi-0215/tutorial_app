@@ -5,6 +5,12 @@
 
 $gray-medium-light: #eaeaea;
 
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
 /* universal */
 
 body {
@@ -70,3 +76,31 @@ p {
     text-decoration: none;
   }
 }
+
+/* various */
+
+.debug_deump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* table */
+
+table {
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;  
+}
+
+th {
+  vertical-align: middle;
+  text-align: center;  
+}
+
+   
+
+
+
